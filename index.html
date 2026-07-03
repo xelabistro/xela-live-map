@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xela Atlas</title>
+
+  <!-- Leaflet Map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <img src="assets/xela-logo.png" class="logo">
+
+        <h1>The Xela Atlas</h1>
+
+        <h3>Every Guest Adds a Chapter</h3>
+
+        <div class="card">
+            <span>📖 Chapters</span>
+            <h2 id="visitors">0</h2>
+        </div>
+
+        <div class="card">
+            <span>🏙 Places</span>
+            <h2 id="cities">0</h2>
+        </div>
+
+        <div class="card">
+            <span>🇺🇸 States</span>
+            <h2 id="states">0</h2>
+        </div>
+
+        <div class="card">
+            <span>🌍 Countries</span>
+            <h2 id="countries">0</h2>
+        </div>
+
+        <div class="latest">
+            <h3>Newest Chapter</h3>
+            <p id="latestVisitor">Waiting...</p>
+        </div>
+
+    </aside>
+
+    <main>
+
+        <div class="title">
+
+            <h1>WHERE OUR GUESTS TRAVEL FROM</h1>
+
+            <p>Every Guest Adds a Chapter To Our Story</p>
+
+        </div>
+
+        <div id="map"></div>
+
+    </main>
+
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
